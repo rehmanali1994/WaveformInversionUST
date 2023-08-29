@@ -12,11 +12,11 @@ Additionally, while our previous work was entirely based on simulated data, this
 
 We show the waveform inversion UST reconstruction of both sound speed and attenuation in a phantom and _in-vivo_ breast imaging cases. The primary motivation of this open-source work is to demonstrate waveform inversion UST in a transparent manner that allows other researchers to easily reproduce our work and improve upon it. The sample data and algorithms provided in this respository were used in following work:
 
-> Ali, R.; Mitcham, T.; Singh, M.; Doyley, M.; Bouchard, R.; Dahl, J.; Duric, N. "Waveform Inversion of Sound Speed and Attenuation for Ring Array Ultrasound Tomography Based on a Block LU Solver". IEEE Transactions on Medical Imaging. _In Review_
+> Ali, R.; Mitcham, T.; Brevett, T.; Calderon, O.; Duran, C.; Li, C.; Duric, N. "Waveform Inversion of Sound Speed and Attenuation for Ring Array Ultrasound Tomography Based on a Block LU Solver". IEEE Transactions on Medical Imaging. _In Review_
 
 If you use the algorithms and/or datasets provided in this repository for your own research work, please cite the above paper.
 
-You can reference a static version of this code by its DOI number: 
+You can reference a static version of this code by its DOI number: [![DOI](https://zenodo.org/badge/684631232.svg)](https://zenodo.org/badge/latestdoi/684631232)
 
 # Experimental Datasets
 
