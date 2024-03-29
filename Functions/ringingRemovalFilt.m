@@ -15,7 +15,7 @@ function img_out = ringingRemovalFilt(xin, yin, img_in, c0, f, cutoff, ord)
 
 % Number and spacing of input points (assumes a uniform spacing)
 Nxin = numel(xin); dxin = mean(diff(xin));
-Nyin = numel(xin); dyin = mean(diff(yin));
+Nyin = numel(yin); dyin = mean(diff(yin));
 
 % K-Space
 kxin = fftshift(((0:Nxin-1)/Nxin)/dxin);
