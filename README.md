@@ -12,7 +12,21 @@ Additionally, while our previous work was entirely based on simulated data, this
 
 We show the waveform inversion UST reconstruction of both sound speed and attenuation in a phantom and _in-vivo_ breast imaging cases. The primary motivation of this open-source work is to demonstrate waveform inversion UST in a transparent manner that allows other researchers to easily reproduce our work and improve upon it. The sample data and algorithms provided in this respository were used in following work:
 
-> Ali, R.; Mitcham, T.; Brevett, T.; Calderon, O.; Duran, C.; Li, C.; Duric, N. "2-D Slicewise Waveform Inversion of Sound Speed and Acoustic Attenuation for Ring Array Ultrasound Tomography Based on a Block LU Solver". IEEE Transactions on Medical Imaging. _In Review_
+> Ali, R.; Mitcham, T.; Brevett, T.; Calderon, O.; Duran, C.; Li, C.; Duric, N. "2-D Slicewise Waveform Inversion of Sound Speed and Acoustic Attenuation for Ring Array Ultrasound Tomography Based on a Block LU Solver". IEEE Transactions on Medical Imaging, DOI: 10.1109/TMI.2024.3383816.
+
+```Bibtex
+@article{ali2023ringFWI2D,
+  author={Ali, Rehman and Mitcham, Trevor M. and Brevett, Thurston and Agudo, Òscar Calderón and Martinez, Cristina Durán and Li, Cuiping and Doyley, Marvin M. and Duric, Nebojsa},
+  journal={IEEE Transactions on Medical Imaging}, 
+  title={2-D Slicewise Waveform Inversion of Sound Speed and Acoustic Attenuation for Ring Array Ultrasound Tomography Based on a Block LU Solver}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Attenuation;Mathematical models;Ultrasonic imaging;Tomography;Image reconstruction;Acoustics;Frequency-domain analysis;Frequency Domain;Waveform Inversion;Tomography;Ultrasound;Ring Array},
+  doi={10.1109/TMI.2024.3383816}
+}
+```
 
 If you use the algorithms and/or datasets provided in this repository for your own research work, please cite the above paper.
 
