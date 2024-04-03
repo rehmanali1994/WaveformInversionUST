@@ -21,7 +21,6 @@ We show the waveform inversion UST reconstruction of both sound speed and attenu
   volume={},
   number={},
   pages={1-1},
-  keywords={Attenuation;Mathematical models;Ultrasonic imaging;Tomography;Image reconstruction;Acoustics;Frequency-domain analysis;Frequency Domain;Waveform Inversion;Tomography;Ultrasound;Ring Array},
   doi={10.1109/TMI.2024.3383816}
 }
 ```
