@@ -14,8 +14,8 @@ We show the waveform inversion UST reconstruction of both sound speed and attenu
 
 > Ali, R.; Mitcham, T.; Brevett, T.; Calderon, O.; Duran, C.; Li, C.; Duric, N. "2-D Slicewise Waveform Inversion of Sound Speed and Acoustic Attenuation for Ring Array Ultrasound Tomography Based on a Block LU Solver". IEEE Transactions on Medical Imaging, DOI: 10.1109/TMI.2024.3383816.
 
-```Bibtex
-@article{ali2023ringFWI2D,
+```BibTeX
+@article{ali2024ringFWI2D,
   author={Ali, Rehman and Mitcham, Trevor M. and Brevett, Thurston and Agudo, Òscar Calderón and Martinez, Cristina Durán and Li, Cuiping and Doyley, Marvin M. and Duric, Nebojsa},
   journal={IEEE Transactions on Medical Imaging}, 
   title={2-D Slicewise Waveform Inversion of Sound Speed and Acoustic Attenuation for Ring Array Ultrasound Tomography Based on a Block LU Solver}, 
