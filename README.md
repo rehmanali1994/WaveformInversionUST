@@ -26,7 +26,7 @@ We show the waveform inversion UST reconstruction of both sound speed and attenu
 }
 ```
 
-If you use the algorithms and/or datasets provided in this repository for your own research work, please cite the above paper. You can find the early access version of the article [here](https://ieeexplore.ieee.org/document/10486959).
+If you use the algorithms and/or datasets provided in this repository for your own research work, please cite the above paper. You can find the Early Access version of the article [here](https://ieeexplore.ieee.org/document/10486959).
 
 You can reference a static version of this code by its DOI number: [![DOI](https://zenodo.org/badge/684631232.svg)](https://zenodo.org/badge/latestdoi/684631232)
 
