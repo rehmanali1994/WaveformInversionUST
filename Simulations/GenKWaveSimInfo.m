@@ -10,12 +10,11 @@ dxi = 0.15e-3; xmax = 120e-3;
 xi = -xmax:dxi:xmax; zi = xi;
 Nxi = numel(xi); Nzi = numel(zi);
 [Xi, Zi] = meshgrid(xi, zi);
-option = 2; % 1 for Breast CT; 2 for Breast MRI
-[C, c_bkgnd] = soundSpeedPhantom2D(Xi, Zi, option);
+[C, c_bkgnd] = soundSpeedPhantom2D(Xi, Zi);
 
 % Attenuation Map
 atten_bkgnd = 0.0025; % Background Attenuation [dB/(MHz^y cm)]
-sos2atten = 6e-2; % Conversion from Sound Speed Difference to Attenuation
+sos2atten = 1.5e-2; % Conversion from Sound Speed Difference to Attenuation
 atten_varying = sos2atten*abs(C-c_bkgnd); % Varying Attenuation [dB/(MHz^y cm)]
 atten = (atten_bkgnd + atten_varying); % Total Attenuation [dB/(MHz^y cm)]
 y_atten = 1.01; % Power Law of Attenuation [y]
@@ -39,7 +38,7 @@ medium.alpha_coeff = atten; % [dB/(MHz^y cm)]
 medium.alpha_power = y_atten; % cannot exactly equal 1 without:
                               % medium.alpha_mode = 'no_dispersion'
 medium.alpha_mode = 'no_dispersion'; % IGNORE VELOCITY DISPERSION!
-kgrid = makeGrid(Nzi, dxi, Nxi, dxi); % K-Space Grid Object
+kgrid = kWaveGrid(Nzi, dxi, Nxi, dxi); % K-Space Grid Object
 
 % Create Time Array
 t_end = 1.3 * Nzi * dxi / min(C(:)); cfl = 0.3;
@@ -70,9 +69,4 @@ input_args = {'DisplayMask', display_mask, 'PMLInside', false, ...
     'PlotPML', false, 'PMLAlpha', 10, 'PlotSim', false, 'DataCast', 'gpuArray-single'};
 
 % Save Simulation Info to File
-switch option
-    case 1
-        save('sim_info/SimInfo_BreastCT.mat');
-    case 2
-        save('sim_info/SimInfo_BreastMRI.mat');
-end
+save('sim_info/SimInfo.mat');
